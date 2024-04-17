@@ -1,0 +1,13 @@
+<h1>Lista de Nombres</h1>
+
+@for (item of personas; track $index) {
+<ul>
+    <li>{{item.nombre}}
+        {{item.edad}}</li>
+</ul>
+}
+<br>
+<app-ej4-hijo (llamadaPadre)="recibirDato($event)"></app-ej4-hijo><br>
+<button (click)="borrarUltimoNombre()">Borrar último</button><br>
+<button (click)="filtrarEdades()">Filtrar mayores de Edad</button><br>
+<button (click)="calcularDobleEdad()">Calcula el Doble de su Edad</button> <br>

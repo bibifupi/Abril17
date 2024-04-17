@@ -1,0 +1,9 @@
+<h1>Asignatura</h1>
+
+@for (item of asignaturas; track $index) {
+    <ul>
+        <li>{{item}}</li>
+    </ul>
+}
+
+<app-ej3-hijo (llamadaPadre)="recibirDato($event)"></app-ej3-hijo>
